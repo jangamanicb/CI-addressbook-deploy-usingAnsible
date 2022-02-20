@@ -46,7 +46,7 @@ pipeline {
                  
              
                
-               sh "ansible-playbook main.yml --extra-vars "ansible_sudo_password=Admin@123" -i inventories/dev/hosts --user cjangamani --key-file ~/.ssh/id_rsa"
+               sh "sudo ansible-playbook main.yml -i inventories/dev/hosts --user cjangamani --key-file ~/.ssh/id_rsa"
 
                
             
